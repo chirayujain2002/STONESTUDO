@@ -1,0 +1,5 @@
+{
+  "name": "Stone Studio",
+  "description": "An AI-powered interior design platform that allows users to upload a photo of their room, have AI detect furniture and surfaces, and then redesign the room by applying new materials and styles in a live preview.",
+  "requestFramePermissions": []
+}

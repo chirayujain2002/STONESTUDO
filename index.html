@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Interior Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#111827', // Black for primary actions
+              'brand-primary-hover': '#374151', // A slightly lighter gray for hover
+              'ui-bg': '#F9FAFB', // Tailwind gray-50 for main background
+              'ui-sidebar': '#FFFFFF', // Sidebar background
+              'ui-canvas': '#F9FAFB', // Canvas background
+              'ui-border': '#E5E7EB', // Tailwind gray-200 for borders
+              'text-main': '#111827', // Tailwind gray-900 for primary text
+              'text-secondary': '#6B7280', // Tailwind gray-500 for lighter text
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'scroll-slow': 'scroll 60s linear infinite',
+              'scroll-fast': 'scroll 40s linear infinite',
+            },
+            keyframes: {
+              scroll: {
+                '0%': { transform: 'translateY(0)' },
+                '100%': { transform: 'translateY(-50%)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://aistudiocdn.com/vite@^7.2.7"
+  }
+}
+</script>
+</head>
+  <body class="bg-ui-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
